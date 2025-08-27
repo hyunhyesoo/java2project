@@ -18,6 +18,9 @@ public class CloneArray {
         String[] originArr = {"카리나", "윈터", "닝닝", "지젤"};
         String[] cloneArr = originArr.clone();
 
+        originArr[1] = "안유진";
+        cloneArr[0] = "장원영";
+
         System.out.println(Arrays.toString(originArr));
         System.out.println(Arrays.toString(cloneArr));
     }
