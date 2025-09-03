@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="점수 입력 받아 개별, 평균 점수 구하는 예제 연습">
-      <change afterPath="$PROJECT_DIR$/src/w0903/RockGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/w0903/UserMethod1.java" afterDir="false" />
+    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="사용자정의 메서드">
+      <change afterPath="$PROJECT_DIR$/src/w0903/LAB_Calc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0903/Plus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +54,8 @@
     "Application.DynamicArray.executor": "Run",
     "Application.LAB.executor": "Run",
     "Application.LAB2.executor": "Run",
+    "Application.LAB_Calc.executor": "Run",
+    "Application.Plus.executor": "Run",
     "Application.RockGame.executor": "Run",
     "Application.SortArray.executor": "Run",
     "Application.UserMethod1.executor": "Run",
@@ -71,39 +73,39 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.UserMethod1">
-    <configuration name="CloneArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0827.CloneArray" />
-      <module name="JavaProject2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="w0827.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LAB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0827.LAB" />
-      <module name="JavaProject2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="w0827.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.LAB_Calc">
     <configuration name="LAB2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="w0827.LAB2" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="w0827.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LAB_Calc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w0903.LAB_Calc" />
+      <module name="JavaProject2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="w0903.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Plus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w0903.Plus" />
+      <module name="JavaProject2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="w0903.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LAB_Calc" />
+        <item itemvalue="Application.Plus" />
         <item itemvalue="Application.UserMethod1" />
         <item itemvalue="Application.RockGame" />
         <item itemvalue="Application.LAB2" />
-        <item itemvalue="Application.LAB" />
-        <item itemvalue="Application.CloneArray" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +170,7 @@
       <workItem from="1756253483451" duration="8800000" />
       <workItem from="1756450816016" duration="4000" />
       <workItem from="1756789098610" duration="61000" />
-      <workItem from="1756857505447" duration="4130000" />
+      <workItem from="1756857505447" duration="11286000" />
     </task>
     <task id="LOCAL-00001" summary="1차원, 2차원 배열">
       <option name="closed" value="true" />
@@ -242,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756263024835</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="사용자정의 메서드">
+      <option name="closed" value="true" />
+      <created>1756862344626</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1756862344626</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +267,8 @@
     <MESSAGE value="1차원배열에서 배열에 다른 값 대입해서 변경, 배열 복사 연습" />
     <MESSAGE value="랜덤 함수로 오늘의 명언 출력 예제 연습" />
     <MESSAGE value="점수 입력 받아 개별, 평균 점수 구하는 예제 연습" />
-    <option name="LAST_COMMIT_MESSAGE" value="점수 입력 받아 개별, 평균 점수 구하는 예제 연습" />
+    <MESSAGE value="사용자정의 메서드" />
+    <option name="LAST_COMMIT_MESSAGE" value="사용자정의 메서드" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
