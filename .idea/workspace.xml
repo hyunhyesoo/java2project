@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="사용자정의 메서드">
-      <change afterPath="$PROJECT_DIR$/src/w0903/LAB_Calc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/w0903/Plus.java" afterDir="false" />
+    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="사칙연산 계산기 만들기">
+      <change afterPath="$PROJECT_DIR$/src/w0910/LAB/LAB01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0910/LAB/LottoNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0910/ListTest/ListPersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0910/ListTest/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0910/ListTest/PrintPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0910/Parameta/Calc1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0910/Parameta/ParametaReturnTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0910/Parameta/ParametaReturnTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0910/Parameta/ParametaReturnTest3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0910/multymethod/InputMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0910/multymethod/MethodPrint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +62,14 @@
     "Application.CloneArray.executor": "Run",
     "Application.DynamicArray.executor": "Run",
     "Application.LAB.executor": "Run",
+    "Application.LAB01.executor": "Run",
     "Application.LAB2.executor": "Run",
     "Application.LAB_Calc.executor": "Run",
+    "Application.ListPersonTest.executor": "Run",
+    "Application.MethodPrint.executor": "Run",
+    "Application.ParametaReturnTest1.executor": "Run",
+    "Application.ParametaReturnTest2.executor": "Run",
+    "Application.ParametaReturnTest3.executor": "Run",
     "Application.Plus.executor": "Run",
     "Application.RockGame.executor": "Run",
     "Application.SortArray.executor": "Run",
@@ -73,13 +88,18 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.LAB_Calc">
-    <configuration name="LAB2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0827.LAB2" />
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="w0910" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.LAB01">
+    <configuration name="LAB01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w0910.LAB.LAB01" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w0827.*" />
+          <option name="PATTERN" value="w0910.LAB.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LAB_Calc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0903.LAB_Calc" />
+    <configuration name="ListPersonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w0910.ListTest.ListPersonTest" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w0903.*" />
+          <option name="PATTERN" value="w0910.ListTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +120,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Plus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0903.Plus" />
+    <configuration name="MethodPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w0910.multymethod.MethodPrint" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w0903.*" />
+          <option name="PATTERN" value="w0910.multymethod.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RockGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0903.RockGame" />
+    <configuration name="ParametaReturnTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w0910.Parameta.ParametaReturnTest2" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w0903.*" />
+          <option name="PATTERN" value="w0910.ListTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,12 +146,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMethod1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0903.UserMethod1" />
+    <configuration name="ParametaReturnTest3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w0910.Parameta.ParametaReturnTest3" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w0903.*" />
+          <option name="PATTERN" value="w0910.ListTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LAB_Calc" />
-        <item itemvalue="Application.Plus" />
-        <item itemvalue="Application.UserMethod1" />
-        <item itemvalue="Application.RockGame" />
-        <item itemvalue="Application.LAB2" />
+        <item itemvalue="Application.LAB01" />
+        <item itemvalue="Application.MethodPrint" />
+        <item itemvalue="Application.ListPersonTest" />
+        <item itemvalue="Application.ParametaReturnTest3" />
+        <item itemvalue="Application.ParametaReturnTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +190,10 @@
       <workItem from="1756253483451" duration="8800000" />
       <workItem from="1756450816016" duration="4000" />
       <workItem from="1756789098610" duration="61000" />
-      <workItem from="1756857505447" duration="11286000" />
+      <workItem from="1756857505447" duration="11395000" />
+      <workItem from="1757047976948" duration="3000" />
+      <workItem from="1757392957845" duration="10000" />
+      <workItem from="1757462622254" duration="7886000" />
     </task>
     <task id="LOCAL-00001" summary="1차원, 2차원 배열">
       <option name="closed" value="true" />
@@ -252,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756862344626</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="사칙연산 계산기 만들기">
+      <option name="closed" value="true" />
+      <created>1756876836716</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1756876836716</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +299,8 @@
     <MESSAGE value="랜덤 함수로 오늘의 명언 출력 예제 연습" />
     <MESSAGE value="점수 입력 받아 개별, 평균 점수 구하는 예제 연습" />
     <MESSAGE value="사용자정의 메서드" />
-    <option name="LAST_COMMIT_MESSAGE" value="사용자정의 메서드" />
+    <MESSAGE value="사칙연산 계산기 만들기" />
+    <option name="LAST_COMMIT_MESSAGE" value="사칙연산 계산기 만들기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
