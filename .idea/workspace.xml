@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="메서드 반환값, 매개변수">
-      <change afterPath="$PROJECT_DIR$/src/w0917/FileReadTest01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/w0917/FileReadTest02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/w0917/Password.java" afterDir="false" />
+    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="파일 읽어오기">
+      <change afterPath="$PROJECT_DIR$/src/w0917/FileWriteTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0917/FileWriteTest02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +54,8 @@
     "Application.DynamicArray.executor": "Run",
     "Application.FileReadTest01.executor": "Run",
     "Application.FileReadTest02.executor": "Run",
+    "Application.FileWriteTest01.executor": "Run",
+    "Application.FileWriteTest02.executor": "Run",
     "Application.LAB.executor": "Run",
     "Application.LAB01.executor": "Run",
     "Application.LAB2.executor": "Run",
@@ -85,10 +86,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="w0917" />
       <recent name="w0910" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FileReadTest02">
+  <component name="RunManager" selected="Application.FileWriteTest02">
     <configuration name="FileReadTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="w0917.FileReadTest01" />
       <module name="JavaProject2" />
@@ -115,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LAB01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0910.LAB.LAB01" />
+    <configuration name="FileWriteTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w0917.FileWriteTest01" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w0910.LAB.*" />
+          <option name="PATTERN" value="w0917.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MethodPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0910.multymethod.MethodPrint" />
+    <configuration name="FileWriteTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w0917.FileWriteTest02" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w0910.multymethod.*" />
+          <option name="PATTERN" value="w0917.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FileWriteTest02" />
+        <item itemvalue="Application.FileWriteTest01" />
         <item itemvalue="Application.FileReadTest02" />
         <item itemvalue="Application.FileReadTest01" />
         <item itemvalue="Application.Password" />
-        <item itemvalue="Application.LAB01" />
-        <item itemvalue="Application.MethodPrint" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +192,7 @@
       <workItem from="1757392957845" duration="10000" />
       <workItem from="1757462622254" duration="8363000" />
       <workItem from="1757548982756" duration="3000" />
-      <workItem from="1758067718490" duration="6476000" />
+      <workItem from="1758067718490" duration="7541000" />
     </task>
     <task id="LOCAL-00001" summary="1차원, 2차원 배열">
       <option name="closed" value="true" />
@@ -288,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757472193207</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="파일 읽어오기">
+      <option name="closed" value="true" />
+      <created>1758075923280</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1758075923280</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +316,8 @@
     <MESSAGE value="사용자정의 메서드" />
     <MESSAGE value="사칙연산 계산기 만들기" />
     <MESSAGE value="메서드 반환값, 매개변수" />
-    <option name="LAST_COMMIT_MESSAGE" value="메서드 반환값, 매개변수" />
+    <MESSAGE value="파일 읽어오기" />
+    <option name="LAST_COMMIT_MESSAGE" value="파일 읽어오기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
