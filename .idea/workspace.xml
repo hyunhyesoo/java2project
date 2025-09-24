@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="파일 작성해서 저장하기">
-      <change afterPath="$PROJECT_DIR$/src/w0924/DecordingSecureFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/w0924/FileCopyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/w0924/ImageFileCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/w0924/SecureTest.java" afterDir="false" />
+    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="이미지파일 복사, 암호화, 디코딩">
+      <change afterPath="$PROJECT_DIR$/src/w0924/ArrayArithmeticExceptionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0924/ArrayExceptionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0924/FileCopyTest2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +49,8 @@
   "keyToString": {
     "Application.Arr2Test.executor": "Run",
     "Application.Array1Test.executor": "Run",
+    "Application.ArrayArithmeticExceptionTest.executor": "Run",
+    "Application.ArrayExceptionTest.executor": "Run",
     "Application.ArrayReverse.executor": "Run",
     "Application.ChangeLengthArray.executor": "Run",
     "Application.CloneArray.executor": "Run",
@@ -93,11 +94,25 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="w0924" />
       <recent name="w0917" />
       <recent name="w0910" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ArrayExceptionTest">
+  <component name="RunManager" selected="Application.ArrayArithmeticExceptionTest">
+    <configuration name="ArrayArithmeticExceptionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w0924.ArrayArithmeticExceptionTest" />
+      <module name="JavaProject2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="w0924.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArrayExceptionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="w0924.ArrayExceptionTest" />
       <module name="JavaProject2" />
@@ -113,19 +128,6 @@
     </configuration>
     <configuration name="DecordingSecureFileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="w0924.DecordingSecureFileTest" />
-      <module name="JavaProject2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="w0924.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileCopyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0924.FileCopyTest" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
@@ -165,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayArithmeticExceptionTest" />
         <item itemvalue="Application.ArrayExceptionTest" />
         <item itemvalue="Application.DecordingSecureFileTest" />
         <item itemvalue="Application.SecureTest" />
         <item itemvalue="Application.ImageFileCopy" />
-        <item itemvalue="Application.FileCopyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +203,7 @@
       <workItem from="1757548982756" duration="3000" />
       <workItem from="1758067718490" duration="8560000" />
       <workItem from="1758153896782" duration="21000" />
-      <workItem from="1758672275133" duration="6297000" />
+      <workItem from="1758672275133" duration="8989000" />
     </task>
     <task id="LOCAL-00001" summary="1차원, 2차원 배열">
       <option name="closed" value="true" />
@@ -315,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758077286880</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="이미지파일 복사, 암호화, 디코딩">
+      <option name="closed" value="true" />
+      <created>1758678982989</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1758678982989</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +345,8 @@
     <MESSAGE value="메서드 반환값, 매개변수" />
     <MESSAGE value="파일 읽어오기" />
     <MESSAGE value="파일 작성해서 저장하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="파일 작성해서 저장하기" />
+    <MESSAGE value="이미지파일 복사, 암호화, 디코딩" />
+    <option name="LAST_COMMIT_MESSAGE" value="이미지파일 복사, 암호화, 디코딩" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
