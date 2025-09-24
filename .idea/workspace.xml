@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="파일 읽어오기">
-      <change afterPath="$PROJECT_DIR$/src/w0917/FileWriteTest01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/w0917/FileWriteTest02.java" afterDir="false" />
+    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="파일 작성해서 저장하기">
+      <change afterPath="$PROJECT_DIR$/src/w0924/DecordingSecureFileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0924/FileCopyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0924/ImageFileCopy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w0924/SecureTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,11 +53,15 @@
     "Application.ArrayReverse.executor": "Run",
     "Application.ChangeLengthArray.executor": "Run",
     "Application.CloneArray.executor": "Run",
+    "Application.DecordingSecure.executor": "Run",
+    "Application.DecordingSecureFileTest.executor": "Run",
     "Application.DynamicArray.executor": "Run",
+    "Application.FileCopyTest.executor": "Run",
     "Application.FileReadTest01.executor": "Run",
     "Application.FileReadTest02.executor": "Run",
     "Application.FileWriteTest01.executor": "Run",
     "Application.FileWriteTest02.executor": "Run",
+    "Application.ImageFileCopy.executor": "Run",
     "Application.LAB.executor": "Run",
     "Application.LAB01.executor": "Run",
     "Application.LAB2.executor": "Run",
@@ -68,6 +74,7 @@
     "Application.Password.executor": "Run",
     "Application.Plus.executor": "Run",
     "Application.RockGame.executor": "Run",
+    "Application.SecureTest.executor": "Run",
     "Application.SortArray.executor": "Run",
     "Application.UserMethod1.executor": "Run",
     "Application.gugudan.executor": "Run",
@@ -90,13 +97,13 @@
       <recent name="w0910" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FileWriteTest02">
-    <configuration name="FileReadTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0917.FileReadTest01" />
+  <component name="RunManager" selected="Application.ArrayExceptionTest">
+    <configuration name="ArrayExceptionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w0924.ArrayExceptionTest" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w0917.*" />
+          <option name="PATTERN" value="w0924.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileReadTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0917.FileReadTest02" />
+    <configuration name="DecordingSecureFileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w0924.DecordingSecureFileTest" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w0917.*" />
+          <option name="PATTERN" value="w0924.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileWriteTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0917.FileWriteTest01" />
+    <configuration name="FileCopyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w0924.FileCopyTest" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w0917.*" />
+          <option name="PATTERN" value="w0924.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileWriteTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0917.FileWriteTest02" />
+    <configuration name="ImageFileCopy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w0924.ImageFileCopy" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w0917.*" />
+          <option name="PATTERN" value="w0924.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +150,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Password" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0917.Password" />
+    <configuration name="SecureTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w0924.SecureTest" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w0917.*" />
+          <option name="PATTERN" value="w0924.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FileWriteTest02" />
-        <item itemvalue="Application.FileWriteTest01" />
-        <item itemvalue="Application.FileReadTest02" />
-        <item itemvalue="Application.FileReadTest01" />
-        <item itemvalue="Application.Password" />
+        <item itemvalue="Application.ArrayExceptionTest" />
+        <item itemvalue="Application.DecordingSecureFileTest" />
+        <item itemvalue="Application.SecureTest" />
+        <item itemvalue="Application.ImageFileCopy" />
+        <item itemvalue="Application.FileCopyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +199,9 @@
       <workItem from="1757392957845" duration="10000" />
       <workItem from="1757462622254" duration="8363000" />
       <workItem from="1757548982756" duration="3000" />
-      <workItem from="1758067718490" duration="7541000" />
+      <workItem from="1758067718490" duration="8560000" />
+      <workItem from="1758153896782" duration="21000" />
+      <workItem from="1758672275133" duration="6297000" />
     </task>
     <task id="LOCAL-00001" summary="1차원, 2차원 배열">
       <option name="closed" value="true" />
@@ -298,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758075923280</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="파일 작성해서 저장하기">
+      <option name="closed" value="true" />
+      <created>1758077286880</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1758077286880</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +334,8 @@
     <MESSAGE value="사칙연산 계산기 만들기" />
     <MESSAGE value="메서드 반환값, 매개변수" />
     <MESSAGE value="파일 읽어오기" />
-    <option name="LAST_COMMIT_MESSAGE" value="파일 읽어오기" />
+    <MESSAGE value="파일 작성해서 저장하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="파일 작성해서 저장하기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
