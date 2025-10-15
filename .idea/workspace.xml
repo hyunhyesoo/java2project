@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="프레임 만들기 - 배열,반복문 사용해서 버튼 여러개 만들기 / 입력한 문장 알림창에 띄우기">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mvc_jdbc_test/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mvc_jdbc_test/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mvc_jdbc_test/view/CustomerView.java" afterDir="false" />
+    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="db + java 연결, mvc로 나누어서 클래스 나누어서 하는 연습 ing..">
+      <change afterPath="$PROJECT_DIR$/src/center_frame/CenterFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w1015/CheckBoxTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w1015/ImageIconTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w1015/RadioButtonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w1015/imgs/bl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w1015/imgs/ive.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w1015/imgs/new.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jdbc_test/JDBCConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc_test/JDBCConnector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +57,7 @@
     "Application.ArrayExceptionTest.executor": "Run",
     "Application.ArrayReverse.executor": "Run",
     "Application.ChangeLengthArray.executor": "Run",
+    "Application.CheckBoxTest.executor": "Run",
     "Application.CloneArray.executor": "Run",
     "Application.DecordingSecure.executor": "Run",
     "Application.DecordingSecureFileTest.executor": "Run",
@@ -65,6 +68,7 @@
     "Application.FileWriteTest01.executor": "Run",
     "Application.FileWriteTest02.executor": "Run",
     "Application.ImageFileCopy.executor": "Run",
+    "Application.ImageIconTest.executor": "Run",
     "Application.JButtonTest.executor": "Run",
     "Application.JButtonTest2.executor": "Run",
     "Application.JDBCConnector.executor": "Run",
@@ -81,6 +85,7 @@
     "Application.ParametaReturnTest3.executor": "Run",
     "Application.Password.executor": "Run",
     "Application.Plus.executor": "Run",
+    "Application.RadioButtonTest.executor": "Run",
     "Application.RockGame.executor": "Run",
     "Application.SecureTest.executor": "Run",
     "Application.SortArray.executor": "Run",
@@ -110,19 +115,35 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java2Projects\JavaProject2\src\w1015\imgs" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="w0924" />
       <recent name="w0917" />
       <recent name="w0910" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JDBCConnector">
-    <configuration name="JButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w1001.JButtonTest" />
+  <component name="RunManager" selected="Application.RadioButtonTest">
+    <configuration name="CheckBoxTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w1015.CheckBoxTest" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w1001.*" />
+          <option name="PATTERN" value="w1015.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImageIconTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w1015.ImageIconTest" />
+      <module name="JavaProject2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="w1015.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,25 +177,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JFrameTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w0924.JFrameTest" />
+    <configuration name="RadioButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w1015.RadioButtonTest" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w0924.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JLabelTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w1001.JLabelTest" />
-      <module name="JavaProject2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="w1001.*" />
+          <option name="PATTERN" value="w1015.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RadioButtonTest" />
+        <item itemvalue="Application.ImageIconTest" />
+        <item itemvalue="Application.CheckBoxTest" />
         <item itemvalue="Application.JDBCConnector" />
         <item itemvalue="Application.JButtonTest2" />
-        <item itemvalue="Application.JButtonTest" />
-        <item itemvalue="Application.JLabelTest" />
-        <item itemvalue="Application.JFrameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +232,9 @@
       <workItem from="1759130526859" duration="1808000" />
       <workItem from="1759276921529" duration="9068000" />
       <workItem from="1760330963440" duration="11000" />
-      <workItem from="1760331049291" duration="6508000" />
+      <workItem from="1760331049291" duration="7829000" />
+      <workItem from="1760417373013" duration="13000" />
+      <workItem from="1760486590991" duration="8975000" />
     </task>
     <task id="LOCAL-00001" summary="1차원, 2차원 배열">
       <option name="closed" value="true" />
@@ -378,7 +388,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759286992094</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="db + java 연결, mvc로 나누어서 클래스 나누어서 하는 연습 ing..">
+      <option name="closed" value="true" />
+      <created>1760340670422</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1760340670422</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,7 +421,8 @@
     <MESSAGE value="GUI 프레임 만들기" />
     <MESSAGE value="db 연결하기" />
     <MESSAGE value="프레임 만들기 - 배열,반복문 사용해서 버튼 여러개 만들기 / 입력한 문장 알림창에 띄우기" />
-    <option name="LAST_COMMIT_MESSAGE" value="프레임 만들기 - 배열,반복문 사용해서 버튼 여러개 만들기 / 입력한 문장 알림창에 띄우기" />
+    <MESSAGE value="db + java 연결, mvc로 나누어서 클래스 나누어서 하는 연습 ing.." />
+    <option name="LAST_COMMIT_MESSAGE" value="db + java 연결, mvc로 나누어서 클래스 나누어서 하는 연습 ing.." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
