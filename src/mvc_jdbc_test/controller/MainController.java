@@ -2,6 +2,9 @@ package mvc_jdbc_test.controller;
 
 import jdbc_test.JDBCConnector;
 import mvc_jdbc_test.entity.Customer;
+import mvc_jdbc_test.view.CustomerView;
+import mvc_jdbc_test.entity.Order;
+import mvc_jdbc_test.view.OrderView;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,15 +14,21 @@ import java.util.ArrayList;
 
 public class MainController {
     public static void main(String[] args) {
-        Connection conn = JDBCConnector.getConnection();
+//        Connection conn = JDBCConnector.getConnection();
+//        customerListAndView(conn);
+        Connection con = JDBCConnector.getConnection();
+        orderListAndView(con);
+    }
+
+    public static void customerListAndView(Connection conn) {
+        ArrayList<Customer> customerList = new ArrayList<Customer>();
         try {
             String sql = "select * from 고객";
             PreparedStatement ps = conn.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
-            ArrayList<Customer> customerList = new ArrayList<Customer>();
             Customer customer = null;
 
-            while(rs.next()) {
+            while (rs.next()) {
                 customer = new Customer();
                 customer.setCustomerid(rs.getString("고객아이디"));
                 customer.setCustomername(rs.getString("고객이름"));
@@ -32,5 +41,51 @@ public class MainController {
         } catch (SQLException e) {
             System.out.println("Statement or SQL Error");
         }
+
+        //CustomerView를 사용해서 customerList에 저장된 Customer Entity의 정보를 출력
+        CustomerView customerView = new CustomerView();
+        customerView.printHead();
+        for (Customer customer : customerList) {
+            customerView.printCustomer(customer);
+            System.out.println();
+        }
+        customerView.printFooter();
+    }
+
+    public static void orderListAndView(Connection con) {
+        ArrayList<Order> orderList = new ArrayList<Order>();
+        try {
+            String sql = "select 주문번호, 고객이름, 고객아이디, 배송지, 수량, 주문일자, 제품명 from 주문, 고객, 제품 where 주문.주문제품=제품.제품번호 and 주문.주문고객=고객.고객아이디";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+            Order order = null;
+
+            while (rs.next()) {
+                order = new Order();
+                order.setorderid(rs.getString("주문번호"));
+                order.setCustomername(rs.getString("고객이름"));
+                order.setCustomerid(rs.getString("고객아이디"));
+                order.setAddress(rs.getString("배송지"));
+                order.setAmount(rs.getInt("수량"));
+                order.setDate(rs.getDate("주문일자"));
+                order.setProductname(rs.getString("제품명"));
+                orderList.add(order);
+            }
+            rs.close();
+            ps.close();
+
+        } catch (SQLException e) {
+            System.out.println("Statement or SQL Error");
+        }
+
+        //OrderView를 사용해서 orderList에 저장된 Order Entity의 정보를 출력
+        OrderView orderView = new OrderView();
+        orderView.printHead();
+        for (Order order : orderList) {
+            orderView.printOrder(order);
+            System.out.println();
+        }
+        orderView.printFooter();
     }
 }
+
