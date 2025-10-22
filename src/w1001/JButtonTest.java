@@ -31,6 +31,7 @@ public class JButtonTest extends JFrame {
     }
 
     ActionListener btnListener = new ActionListener() {
+        @Override
         public void actionPerformed(ActionEvent e) {
             JOptionPane.showMessageDialog(null, e.getActionCommand() + " 버튼을 선택했습니다");
         }
