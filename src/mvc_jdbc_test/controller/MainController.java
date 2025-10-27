@@ -4,6 +4,7 @@ import jdbc_test.JDBCConnector;
 import mvc_jdbc_test.entity.Customer;
 import mvc_jdbc_test.view.CustomerView;
 import mvc_jdbc_test.entity.Order;
+import mvc_jdbc_test.view.InputCustomerView;
 import mvc_jdbc_test.view.OrderView;
 
 import java.sql.Connection;
@@ -11,13 +12,16 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class MainController {
     public static void main(String[] args) {
+        Connection con = JDBCConnector.getConnection();
+        InputcustomerAndView(con);
 //        Connection conn = JDBCConnector.getConnection();
 //        customerListAndView(conn);
-        Connection con = JDBCConnector.getConnection();
-        orderListAndView(con);
+//        Connection con = JDBCConnector.getConnection();
+//        orderListAndView(con);
     }
 
     public static void customerListAndView(Connection conn) {
@@ -87,5 +91,42 @@ public class MainController {
         }
         orderView.printFooter();
     }
-}
+
+
+    public static void InputcustomerAndView(Connection con) {
+        Scanner sc = InputCustomerView.sc;
+        InputCustomerView inputCustomer = new InputCustomerView();
+        while (true) {
+            Customer customer = inputCustomer.inputCustomer();
+            CustomerView customerView = new CustomerView();
+            customerView.printHead();
+            customerView.printCustomer(customer);
+            customerView.printFooter();
+
+            String sql = "insert into 고객 values(?,?,?,?,?,?)";
+//            String sql = "insert into 고객 values('"+customer.getCustomerid()+"')"; ? 안 쓰면 이렇게 문자열끼리 다 연결해줘야해서 매우 번거로움
+            try {
+                PreparedStatement pst = con.prepareStatement(sql);
+                pst.setString(1, customer.getCustomerid());
+                pst.setString(2, customer.getCustomername());
+                pst.setInt(3, customer.getAge());
+                pst.setString(4, customer.getLevel());
+                pst.setString(5, customer.getJob());
+                pst.setInt(6, customer.getReward());
+                pst.executeUpdate();
+                pst.close();
+                System.out.println("고객정보 1건 추가 완료");
+            } catch (SQLException e) {
+                System.out.println("Statement or SQL Error");
+            }
+                System.out.println("추가 입력(임의의 문자) / 종료(e) =>");
+                String choice = sc.nextLine();
+                if (choice.equals("e")) {
+                    break;
+                }
+                System.out.println("프로그램이 종료되었습니다.");
+            }
+        }
+
+    }
 

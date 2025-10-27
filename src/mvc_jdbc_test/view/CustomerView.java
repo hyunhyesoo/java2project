@@ -5,11 +5,12 @@ import mvc_jdbc_test.entity.Customer;
 public class CustomerView {
     public String title = "고객 정보";
     public void printCustomer(Customer customer) {
+        System.out.printf("* 고객아이디: %s\n", customer.getCustomerid());
         System.out.printf("* 고객명: %s\n", customer.getCustomername());
-        System.out.printf("* 나이: %s\n", customer.getAge());
+        System.out.printf("* 나이: %d\n", customer.getAge());
         System.out.printf("* 등급: %s\n", customer.getLevel());
         System.out.printf("* 직업: %s\n", customer.getJob());
-        System.out.printf("* 적립금: %s\n", customer.getReward());
+        System.out.printf("* 적립금: %d\n", customer.getReward());
     }
 
     public void printHead() {
