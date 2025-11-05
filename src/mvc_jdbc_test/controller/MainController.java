@@ -6,6 +6,7 @@ import mvc_jdbc_test.view.CustomerView;
 import mvc_jdbc_test.entity.Order;
 import mvc_jdbc_test.view.InputCustomerView;
 import mvc_jdbc_test.view.OrderView;
+import mvc_jdbc_test.view.UpdateCustomerView;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -119,14 +120,15 @@ public class MainController {
             } catch (SQLException e) {
                 System.out.println("Statement or SQL Error");
             }
-                System.out.println("추가 입력(임의의 문자) / 종료(e) =>");
-                String choice = sc.nextLine();
-                if (choice.equals("e")) {
-                    break;
-                }
-                System.out.println("프로그램이 종료되었습니다.");
+            System.out.println("추가 입력(임의의 문자) / 종료(e) =>");
+            String choice = sc.nextLine();
+            if (choice.equals("e")) {
+                break;
             }
+            System.out.println("프로그램이 종료되었습니다.");
         }
-
     }
+
+
+}
 
