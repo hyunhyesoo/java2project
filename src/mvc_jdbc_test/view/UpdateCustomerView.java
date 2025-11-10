@@ -19,7 +19,6 @@ public class UpdateCustomerView {
 
         System.out.print("고객나이(변경 후) 입력: ");
         int customerAge = sc.nextInt();
-        sc.nextLine();   // 버퍼 비우기
 
         System.out.print("고객등급(변경 후) 입력: ");
         String customerLevel = sc.nextLine();

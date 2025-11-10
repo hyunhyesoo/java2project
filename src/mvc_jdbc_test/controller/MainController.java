@@ -143,7 +143,6 @@ public class MainController {
             // 어떤 고객을 수정할지 + 수정할 값들 받기
             Customer customer = updateView.UpdateCustomer();
 
-            // 입력받은 걸 한번 보여주기 (기존 스타일 맞춤)
             CustomerView customerView = new CustomerView();
             customerView.title = "수정할 고객 정보";
             customerView.printHead();
@@ -188,17 +187,14 @@ public class MainController {
         Scanner sc = DeleteCustomerView.sc;
 
         while (true) {
-            // 1) 어떤 고객을 지울지 뷰에서 입력받기
             String targetId = deleteView.deleteCustomer();
 
-            // 2) 확인 로직 (네가 준 코드 스타일)
             System.out.print("정말 삭제하시겠습니까? (y/n): ");
             String yn = sc.nextLine().trim().toLowerCase();
 
             if (!yn.equals("y")) {
                 System.out.println("삭제를 취소하였습니다.");
             } else {
-                // 3) DB 삭제
                 try {
                     String delSql = "DELETE FROM 고객 WHERE 고객아이디 = ?";
                     PreparedStatement ps = con.prepareStatement(delSql);
@@ -216,7 +212,6 @@ public class MainController {
                 }
             }
 
-            // 4) 반복 여부
             System.out.print("추가 삭제(임의의 문자) / 종료(e) => ");
             String choice = sc.nextLine();
             if (choice.equals("e")) {

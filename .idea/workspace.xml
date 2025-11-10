@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="마우스이벤트, 메뉴, 툴바 연습">
+    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="db 연결 고객정보 수정, 삭제 코드 작성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mvc_jdbc_test/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc_jdbc_test/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mvc_jdbc_test/view/DeleteCustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc_jdbc_test/view/DeleteCustomerView.java" afterDir="false" />
@@ -263,6 +263,7 @@
       <workItem from="1762301122166" duration="10065000" />
       <workItem from="1762328384949" duration="1000" />
       <workItem from="1762479658519" duration="2234000" />
+      <workItem from="1762738589214" duration="2309000" />
     </task>
     <task id="LOCAL-00001" summary="1차원, 2차원 배열">
       <option name="closed" value="true" />
@@ -472,14 +473,21 @@
       <option name="project" value="LOCAL" />
       <updated>1762311511340</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="db 연결 고객정보 수정, 삭제 코드 작성">
+      <option name="closed" value="true" />
+      <created>1762738632426</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1762738632426</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1차원, 2차원 배열" />
     <MESSAGE value="이중 for문 연습(구구단)" />
     <MESSAGE value="1차원배열에서 자바 api에 있는 메서드 사용(Arrays.copyof, sort, Enhanced for문)" />
     <MESSAGE value="1차원배열에서 자바 api에 있는 메서드 사용(Arrays.copyof, sort), Enhanced for문 사용" />
@@ -504,7 +512,8 @@
     <MESSAGE value="db 연결, 고객 정보 등록하기 연습" />
     <MESSAGE value="레이아웃 매니저(배지관리자), 마우스 이벤트(일부)" />
     <MESSAGE value="마우스이벤트, 메뉴, 툴바 연습" />
-    <option name="LAST_COMMIT_MESSAGE" value="마우스이벤트, 메뉴, 툴바 연습" />
+    <MESSAGE value="db 연결 고객정보 수정, 삭제 코드 작성" />
+    <option name="LAST_COMMIT_MESSAGE" value="db 연결 고객정보 수정, 삭제 코드 작성" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
