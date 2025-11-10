@@ -7,6 +7,7 @@ import mvc_jdbc_test.entity.Order;
 import mvc_jdbc_test.view.InputCustomerView;
 import mvc_jdbc_test.view.OrderView;
 import mvc_jdbc_test.view.UpdateCustomerView;
+import mvc_jdbc_test.view.DeleteCustomerView;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -18,7 +19,11 @@ import java.util.Scanner;
 public class MainController {
     public static void main(String[] args) {
         Connection con = JDBCConnector.getConnection();
-        InputcustomerAndView(con);
+        deleteCustomerAndView(con);
+//        Connection con = JDBCConnector.getConnection();
+//        updateCustomerAndView(con);
+//        Connection con = JDBCConnector.getConnection();
+//        InputcustomerAndView(con);
 //        Connection conn = JDBCConnector.getConnection();
 //        customerListAndView(conn);
 //        Connection con = JDBCConnector.getConnection();
@@ -129,6 +134,96 @@ public class MainController {
         }
     }
 
+    public static void updateCustomerAndView(Connection con) {
+        // 수정용 View
+        UpdateCustomerView updateView = new UpdateCustomerView();
+        Scanner sc = UpdateCustomerView.sc;
 
+        while (true) {
+            // 어떤 고객을 수정할지 + 수정할 값들 받기
+            Customer customer = updateView.UpdateCustomer();
+
+            // 입력받은 걸 한번 보여주기 (기존 스타일 맞춤)
+            CustomerView customerView = new CustomerView();
+            customerView.title = "수정할 고객 정보";
+            customerView.printHead();
+            customerView.printCustomer(customer);
+            customerView.printFooter();
+
+            String sql = "update 고객 set 고객이름 = ?, 나이 = ?, 등급 = ?, 직업 = ?, 적립금 = ? where 고객아이디 = ?";
+
+            try {
+                PreparedStatement pst = con.prepareStatement(sql);
+                pst.setString(1, customer.getCustomername());
+                pst.setInt(2, customer.getAge());
+                pst.setString(3, customer.getLevel());
+                pst.setString(4, customer.getJob());
+                pst.setInt(5, customer.getReward());
+                pst.setString(6, customer.getCustomerid());
+
+                int result = pst.executeUpdate();
+                pst.close();
+
+                if (result > 0) {
+                    System.out.println("고객정보 1건 수정 완료");
+                } else {
+                    System.out.println("해당 고객아이디가 없습니다.");
+                }
+            } catch (SQLException e) {
+                System.out.println("수정 오류: " + e.getMessage());
+            }
+
+            System.out.println("추가 수정(임의의 문자) / 종료(e) =>");
+            String choice = sc.nextLine();
+            if (choice.equals("e")) {
+                break;
+            }
+        }
+        System.out.println("프로그램이 종료되었습니다.");
+    }
+
+
+    public static void deleteCustomerAndView(Connection con) {
+        DeleteCustomerView deleteView = new DeleteCustomerView();
+        Scanner sc = DeleteCustomerView.sc;
+
+        while (true) {
+            // 1) 어떤 고객을 지울지 뷰에서 입력받기
+            String targetId = deleteView.deleteCustomer();
+
+            // 2) 확인 로직 (네가 준 코드 스타일)
+            System.out.print("정말 삭제하시겠습니까? (y/n): ");
+            String yn = sc.nextLine().trim().toLowerCase();
+
+            if (!yn.equals("y")) {
+                System.out.println("삭제를 취소하였습니다.");
+            } else {
+                // 3) DB 삭제
+                try {
+                    String delSql = "DELETE FROM 고객 WHERE 고객아이디 = ?";
+                    PreparedStatement ps = con.prepareStatement(delSql);
+                    ps.setString(1, targetId);
+                    int rows = ps.executeUpdate();
+                    ps.close();
+
+                    if (rows > 0) {
+                        System.out.println("고객정보 1건 삭제 완료");
+                    } else {
+                        System.out.println("입력한 아이디가 존재하지 않습니다.");
+                    }
+                } catch (SQLException e) {
+                    System.out.println("삭제 오류: " + e.getMessage());
+                }
+            }
+
+            // 4) 반복 여부
+            System.out.print("추가 삭제(임의의 문자) / 종료(e) => ");
+            String choice = sc.nextLine();
+            if (choice.equals("e")) {
+                break;
+            }
+        }
+        System.out.println("프로그램이 종료되었습니다.");
+    }
 }
 
