@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="db 연결 고객정보 수정, 삭제 코드 작성">
+    <list default="true" id="d505d096-93fe-431e-b258-5c3dc254c9bb" name="Changes" comment="데이터베이스실무 중간고사 과제">
+      <change afterPath="$PROJECT_DIR$/src/w1112/ConfirmDialogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w1112/InputDialogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w1112/MessageDialogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w1112/UserDialogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w1112/draw/DrawPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/w1112/draw/MainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mvc_jdbc_test/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc_jdbc_test/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mvc_jdbc_test/view/DeleteCustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc_jdbc_test/view/DeleteCustomerView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mvc_jdbc_test/view/UpdateCustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc_jdbc_test/view/UpdateCustomerView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,88 +48,93 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Arr2Test.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Array1Test.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ArrayArithmeticExceptionTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ArrayExceptionTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ArrayReverse.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BorderLayoutTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ChangeLengthArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CheckBoxTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CloneArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DecordingSecure.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DecordingSecureFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DrawPolygonTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DynamicArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FileCopyTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FileReadTest01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FileReadTest02.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FileWriteTest01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FileWriteTest02.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FlowLayoutTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ImageFileCopy.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ImageIconTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JButtonTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JButtonTest2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JDBCConnector.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JFrameTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JLabelTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LAB.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LAB01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LAB2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LAB_Calc.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LAB_DrawLine.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LAB_GridDice.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Layout.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ListAndComboTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ListPersonTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MainController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MenuAndToolbarTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MenuTest1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MethodPrint.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MouseEventTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MouseEventTest2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MouseFindXY.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NullLayoutTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ParametaReturnTest1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ParametaReturnTest2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ParametaReturnTest3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Password.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Plus.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RadioButtonTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RockGame.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SecureTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SelectFood.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SortArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TextFieldTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ToolbarTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UserMethod1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.gugudan.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/Java/ojdbc17.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Java2Projects/JavaProject2/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Arr2Test.executor": "Run",
+    "Application.Array1Test.executor": "Run",
+    "Application.ArrayArithmeticExceptionTest.executor": "Run",
+    "Application.ArrayExceptionTest.executor": "Run",
+    "Application.ArrayReverse.executor": "Run",
+    "Application.BorderLayoutTest.executor": "Run",
+    "Application.ChangeLengthArray.executor": "Run",
+    "Application.CheckBoxTest.executor": "Run",
+    "Application.CloneArray.executor": "Run",
+    "Application.ConfirmDialogTest.executor": "Run",
+    "Application.DecordingSecure.executor": "Run",
+    "Application.DecordingSecureFileTest.executor": "Run",
+    "Application.DrawPolygonTest.executor": "Run",
+    "Application.DynamicArray.executor": "Run",
+    "Application.FileCopyTest.executor": "Run",
+    "Application.FileReadTest01.executor": "Run",
+    "Application.FileReadTest02.executor": "Run",
+    "Application.FileWriteTest01.executor": "Run",
+    "Application.FileWriteTest02.executor": "Run",
+    "Application.FlowLayoutTest.executor": "Run",
+    "Application.ImageFileCopy.executor": "Run",
+    "Application.ImageIconTest.executor": "Run",
+    "Application.InputDialogTest.executor": "Run",
+    "Application.JButtonTest.executor": "Run",
+    "Application.JButtonTest2.executor": "Run",
+    "Application.JDBCConnector.executor": "Run",
+    "Application.JFrameTest.executor": "Run",
+    "Application.JLabelTest.executor": "Run",
+    "Application.LAB.executor": "Run",
+    "Application.LAB01.executor": "Run",
+    "Application.LAB2.executor": "Run",
+    "Application.LAB_Calc.executor": "Run",
+    "Application.LAB_DrawLine.executor": "Run",
+    "Application.LAB_GridDice.executor": "Run",
+    "Application.Layout.executor": "Run",
+    "Application.ListAndComboTest.executor": "Run",
+    "Application.ListPersonTest.executor": "Run",
+    "Application.MainController.executor": "Run",
+    "Application.MainFrame.executor": "Run",
+    "Application.MenuAndToolbarTest.executor": "Run",
+    "Application.MenuTest1.executor": "Run",
+    "Application.MessageDialogTest.executor": "Run",
+    "Application.MethodPrint.executor": "Run",
+    "Application.MouseEventTest.executor": "Run",
+    "Application.MouseEventTest2.executor": "Run",
+    "Application.MouseFindXY.executor": "Run",
+    "Application.NullLayoutTest.executor": "Run",
+    "Application.ParametaReturnTest1.executor": "Run",
+    "Application.ParametaReturnTest2.executor": "Run",
+    "Application.ParametaReturnTest3.executor": "Run",
+    "Application.Password.executor": "Run",
+    "Application.Plus.executor": "Run",
+    "Application.RadioButtonTest.executor": "Run",
+    "Application.RockGame.executor": "Run",
+    "Application.SecureTest.executor": "Run",
+    "Application.SelectFood.executor": "Run",
+    "Application.SortArray.executor": "Run",
+    "Application.TextFieldTest.executor": "Run",
+    "Application.ToolbarTest.executor": "Run",
+    "Application.UserDialogTest.executor": "Run",
+    "Application.UserMethod1.executor": "Run",
+    "Application.gugudan.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Program Files/Java/ojdbc17.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/Java2Projects/JavaProject2/src/Main.java",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;oracle&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "oracle"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Java2Projects\JavaProject2\src\w1105\images" />
@@ -134,20 +142,20 @@
       <recent name="D:\Java2Projects\JavaProject2\src\w1015\imgs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="w1112" />
       <recent name="w1105" />
       <recent name="w1029" />
       <recent name="mvc_jdbc_test.view" />
       <recent name="w0924" />
-      <recent name="w0917" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainController">
-    <configuration name="LAB_DrawLine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w1105.LAB_DrawLine" />
+  <component name="RunManager" selected="Application.MainFrame">
+    <configuration name="ConfirmDialogTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w1112.ConfirmDialogTest" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w1105.*" />
+          <option name="PATTERN" value="w1112.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,12 +163,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mvc_jdbc_test.controller.MainController" />
+    <configuration name="InputDialogTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w1112.InputDialogTest" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mvc_jdbc_test.controller.*" />
+          <option name="PATTERN" value="w1112.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,12 +176,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuAndToolbarTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w1105.MenuAndToolbarTest" />
+    <configuration name="MainFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w1112.draw.MainFrame" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w1105.*" />
+          <option name="PATTERN" value="w1112.draw.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -181,12 +189,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w1105.MenuTest1" />
+    <configuration name="MessageDialogTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w1112.MessageDialogTest" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w1105.*" />
+          <option name="PATTERN" value="w1112.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -194,12 +202,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ToolbarTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="w1105.ToolbarTest" />
+    <configuration name="UserDialogTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="w1112.UserDialogTest" />
       <module name="JavaProject2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="w1105.*" />
+          <option name="PATTERN" value="w1112.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -209,11 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainController" />
-        <item itemvalue="Application.MenuAndToolbarTest" />
-        <item itemvalue="Application.MenuTest1" />
-        <item itemvalue="Application.ToolbarTest" />
-        <item itemvalue="Application.LAB_DrawLine" />
+        <item itemvalue="Application.MainFrame" />
+        <item itemvalue="Application.UserDialogTest" />
+        <item itemvalue="Application.ConfirmDialogTest" />
+        <item itemvalue="Application.InputDialogTest" />
+        <item itemvalue="Application.MessageDialogTest" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +271,10 @@
       <workItem from="1762301122166" duration="10065000" />
       <workItem from="1762328384949" duration="1000" />
       <workItem from="1762479658519" duration="2234000" />
-      <workItem from="1762738589214" duration="2309000" />
+      <workItem from="1762738589214" duration="2388000" />
+      <workItem from="1762761214864" duration="157000" />
+      <workItem from="1762836078363" duration="7000" />
+      <workItem from="1762905859099" duration="9116000" />
     </task>
     <task id="LOCAL-00001" summary="1차원, 2차원 배열">
       <option name="closed" value="true" />
@@ -481,14 +492,21 @@
       <option name="project" value="LOCAL" />
       <updated>1762738632426</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="데이터베이스실무 중간고사 과제">
+      <option name="closed" value="true" />
+      <created>1762761050500</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1762761050500</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="이중 for문 연습(구구단)" />
     <MESSAGE value="1차원배열에서 자바 api에 있는 메서드 사용(Arrays.copyof, sort, Enhanced for문)" />
     <MESSAGE value="1차원배열에서 자바 api에 있는 메서드 사용(Arrays.copyof, sort), Enhanced for문 사용" />
     <MESSAGE value="1차원배열에서 저장된 값을 역순으로 reverse하는 연습" />
@@ -513,7 +531,8 @@
     <MESSAGE value="레이아웃 매니저(배지관리자), 마우스 이벤트(일부)" />
     <MESSAGE value="마우스이벤트, 메뉴, 툴바 연습" />
     <MESSAGE value="db 연결 고객정보 수정, 삭제 코드 작성" />
-    <option name="LAST_COMMIT_MESSAGE" value="db 연결 고객정보 수정, 삭제 코드 작성" />
+    <MESSAGE value="데이터베이스실무 중간고사 과제" />
+    <option name="LAST_COMMIT_MESSAGE" value="데이터베이스실무 중간고사 과제" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
