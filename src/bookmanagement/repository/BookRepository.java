@@ -53,4 +53,51 @@ public class BookRepository {
 
         return bookV0List;
     }
+
+    public void insert(BookVO bookVO) {
+        Connection con = JDBCConnector.getConnection();
+        String sql = "insert into book values(?,?,?,?,?,?)";
+        PreparedStatement ps = null;
+
+        try {
+            ps = con.prepareStatement(sql);
+            ps.setInt(1, bookVO.getIsbn());
+            ps.setString(2, bookVO.getName());
+            ps.setString(3, bookVO.getPublish());
+            ps.setString(4, bookVO.getAuthor());
+            ps.setInt(5, bookVO.getPrice());
+            int categoryId = 0;
+            switch (bookVO.getCategoryName()) {
+                case "IT도서":
+                    categoryId = 10;
+                    break;
+                case "소설":
+                    categoryId = 20;
+                    break;
+                case "비소설":
+                    categoryId = 30;
+                    break;
+                case "경제":
+                    categoryId = 40;
+                    break;
+                case "사회":
+                    categoryId = 50;
+                    break;
+            }
+            ps.setInt(6, categoryId);
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally{
+            try{
+                if (ps != null)
+                    ps.close();
+                if(con != null)
+                    con.close();
+            }catch (SQLException e){
+                System.out.println("insert close 문제발생");
+                e.printStackTrace();
+            }
+        }
+    }
 }
